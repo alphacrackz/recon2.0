@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*
+#cms cheker 
 #!/usr/bin/python
 #####################################
 ##KILL THE NET##
