@@ -21,9 +21,7 @@ def start():
 
                 url = "https://" + domain + payload
                 url = url.strip()
-            
-                try:
-                    r = requests.head(url, allow_redirects=True, timeout=5)
+           
 
                     if r.history:  
                         if r.url == "https://example.com":
