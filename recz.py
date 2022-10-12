@@ -43,10 +43,7 @@ Agent = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:28.0) Gecko/201
  
  
 def wordpress(url):
-    try:
-        path0 = se.get(url, headers=Agent, verify=False, timeout=50)
-        path4 = se.get(url + '/license.txt', headers=Agent, verify=False, timeout=50)
-        path5 = se.get(url + '/xmlrpc.php?rsd', headers=Agent, verify=False, timeout=50)
+    + '/xmlrpc.php?rsd', headers=Agent, verify=False, timeout=50)
         if path4.status_code == 200:
             if 'WordPress' in path4.content.encode('utf-8'):
                 print(ktn3yell + '#[-WORDPRESS CMS-]=========> ' + '(' + url + ')' + CEND)
