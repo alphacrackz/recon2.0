@@ -19,8 +19,7 @@ def start():
         for domain in domains:
             if domain != "":
 
-                url = "https://" + domain + payload
-                url = url.strip()
+               
            
 
                     if r.history:  
